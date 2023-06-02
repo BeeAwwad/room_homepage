@@ -1,16 +1,12 @@
 import Header from "./comps/header";
-
+import Main from "./comps/main";
 
 function App() {
 
   return (
     <>
       <Header />
-      <main>
-        <div></div>
-        <div>
-        </div>
-      </main>  
+      <Main/>
     </>
   )
 }
