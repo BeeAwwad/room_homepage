@@ -44,9 +44,9 @@ const Couresel = () => {
 
   return (
     <div className='absolute top-0 left-0'>
-        <div className="carousel">
+        <div id="carousel" className="w-full relative">
             <img className='w-full' src={imageSource} alt={images[current].alt} title={images[current].title} key={images[current].id} />
-            <div className="inline-flex relative bottom-0 right-0">
+            <div className="flex justify-end absolute bottom-0 right-0 ">
                 <button onClick={prevSlide} className="bg-gray-900 hover:bg-gray-700 text-gray-800 font-bold py-2 px-4 transition-all ease-out duration-500">
                 <svg width="14" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M13 0L1 12l12 12" stroke="#FFF" fill="none" fill-rule="evenodd"/></svg>
                 </button>

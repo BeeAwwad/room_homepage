@@ -25,7 +25,7 @@ const Header = () => {
     <>
       <header className="items-center p-6 my-5 font-sparta">
         <nav className='flex justify-end md:justify-start gap-12'>
-          <span className='text-xl font-semibold absolute left-1/2 top-10 transform -translate-x-1/2 md:static text-white z-40'>room</span>
+          <span className='text-2xl font-semibold absolute left-1/2 top-10 transform -translate-x-1/2 md:static text-white z-40'>room</span>
           <div onClick={()=>setOpen(!open)} className='z-50 md:hidden absolute left-2 top-10'>
             {open ? close : burger}
           </div>
