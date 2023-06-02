@@ -5,7 +5,6 @@ const Main = () => {
   return (
     <div>
         <Couresel/>
-        rest of the main
     </div>
   )
 }
