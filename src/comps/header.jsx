@@ -25,12 +25,12 @@ const Header = () => {
     <>
       <header className="items-center p-6 my-5 font-sparta">
         <nav className='flex justify-end md:justify-start gap-12'>
-          <span className='text-2xl font-semibold absolute left-1/2 top-10 transform -translate-x-1/2 md:static text-white z-40'>room</span>
+          <span className='text-2xl md:text-3xl lg:text-4xl md:ml-12 lg:ml-16 font-semibold absolute left-1/2 top-10 transform -translate-x-1/2 md:static text-white z-40'>room</span>
           <div onClick={()=>setOpen(!open)} className='z-50 md:hidden absolute left-2 top-10'>
             {open ? close : burger}
           </div>
 
-          <ul className={`text-xl font-semibold text-black items-center md:items-start bg-white w-full h-28 md:h-0 absolute p-5 md:p-0 top-0 right-0 md:static flex justify-end md:justify-normal gap-4 transition-all duration-400 z-40 ease-in ${open ? 'top-0': 'top-[-300px]'}`}>
+          <ul className={`text-xl font-semibold text-black md:text-white items-center md:items-start bg-white w-full h-28 md:h-0 absolute p-5 md:p-0 top-0 right-0 md:static flex justify-end md:justify-normal gap-4 transition-all md:mt-2 md:text-base lg:text-lg duration-400 z-40 ease-in ${open ? 'top-0': 'top-[-300px]'}`}>
             {
               Links.map((link)=>(
                 <li>
