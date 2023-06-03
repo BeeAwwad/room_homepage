@@ -43,7 +43,7 @@ const Couresel = () => {
       const imageSource = isMobile ? images[current].mobsrc : images[current].src;
 
   return (
-    <div className='absolute top-0 left-0 md:flex md:h-4/6'>
+    <div className='absolute top-0 left-0 md:flex md:h-96 lg:h-4/6'>
         <div id="carousel" className="w-full relative md:h-full md:w-7/12">
             <img className='w-full md:h-full md:w-full object-cover' src={imageSource} alt={images[current].alt} title={images[current].title} key={images[current].id} />
             <div className="flex justify-end absolute bottom-0 right-0 md:transform md:translate-x-full">
@@ -57,10 +57,10 @@ const Couresel = () => {
         </div>
 
         <div className='m-7 md:h-full md:w-5/12 md:m-3 lg:m-4 md:p-10 lg:p-24'>
-            <h1 className='py-6 md:mb-2 lg:mb-5 text-4xl md:text-2xl lg:text-5xl font-bold'>{images[current].title}</h1>
-            <p className='font-medium text-gray-400 text-lg md:text-sm lg:text-lg'>{images[current].text}</p>
+            <h1 className='md:py-3 py-6 md:mb-2 lg:mb-5 text-4xl md:text-2xl lg:text-5xl font-bold'>{images[current].title}</h1>
+            <p className='font-medium text-gray-400 text-lg md:text-xs lg:text-lg'>{images[current].text}</p>
             <div className='md:my-2 flex items-center my-4 py-6 hover:text-gray-400 transition-all ease-in duration-300 gap-3'>
-                <span className='tracking-[1em] font-bold md:text-sm lg:text-xl text-medium'>SHOP NOW</span>
+                <span className='tracking-[1em] font-bold md:text-xs lg:text-xl text-medium'>SHOP NOW</span>
                 <svg className='' width="40" height="12" xmlns="http://www.w3.org/2000/svg"><path d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z" fill="#000" fill-rule="nonzero"/></svg>
             </div>
         </div>
