@@ -1,12 +1,12 @@
 import React from 'react'
 import Couresel from './couresel'
 
-const Main = () => {
+const Body = () => {
   return (
-    <div>
+    <div id='body'>
         <Couresel/>
     </div>
   )
 }
 
-export default Main
+export default Body

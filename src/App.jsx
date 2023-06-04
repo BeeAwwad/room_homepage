@@ -1,12 +1,12 @@
 import Header from "./comps/header";
-import Main from "./comps/main";
+import Body from "./comps/body";
 
 function App() {
 
   return (
     <>
       <Header />
-      <Main/>
+      <Body/>
     </>
   )
 }

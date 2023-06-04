@@ -43,24 +43,24 @@ const Couresel = () => {
       const imageSource = isMobile ? images[current].mobsrc : images[current].src;
 
   return (
-    <div className='absolute top-0 left-0 md:flex md:h-96 lg:h-4/6'>
+    <div className='absolute top-0 left-0 md:flex md:h-96 lg:h-fit  xl:h-3/5'>
         <div id="carousel" className="w-full relative md:h-full md:w-7/12">
             <img className='w-full md:h-full md:w-full object-cover' src={imageSource} alt={images[current].alt} title={images[current].title} key={images[current].id} />
             <div className="flex justify-end absolute bottom-0 right-0 md:transform md:translate-x-full">
-                <button onClick={prevSlide} className="bg-gray-900 hover:bg-gray-700 text-gray-800 font-bold lg:py-5 py-3 lg:px-8 px-6 transition-all ease-out duration-500">
+                <button onClick={prevSlide} className="bg-gray-900 hover:bg-gray-700 text-gray-800 font-bold xl:py-5 py-3 xl:px-8 px-6 transition-all ease-out duration-500">
                 <svg className='' width="14" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M13 0L1 12l12 12" stroke="#FFF" fill="none" fill-rule="evenodd"/></svg>
                 </button>
-                <button onClick={nextSlide} className="bg-gray-900 hover:bg-gray-700 text-gray-800 font-bold lg:py-5 py-3 lg:px-8 px-6 transition-all ease-out duration-500">
+                <button onClick={nextSlide} className="bg-gray-900 hover:bg-gray-700 text-gray-800 font-bold xl:py-5 py-3 xl:px-8 px-6 transition-all ease-out duration-500">
                 <svg  className='' width="14" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M1 0l12 12L1 24" stroke="#FFF" fill="none" fill-rule="evenodd"/></svg>
                 </button>
             </div>
         </div>
 
-        <div className='m-7 md:h-full md:w-5/12 md:m-3 lg:m-4 md:p-10 lg:p-24'>
-            <h1 className='md:py-3 py-6 md:mb-2 lg:mb-5 text-4xl md:text-2xl lg:text-5xl font-bold'>{images[current].title}</h1>
-            <p className='font-medium text-gray-400 text-lg md:text-xs lg:text-lg'>{images[current].text}</p>
-            <div className='md:my-2 flex items-center my-4 py-6 hover:text-gray-400 transition-all ease-in duration-300 gap-3'>
-                <span className='tracking-[1em] font-bold md:text-xs lg:text-xl text-medium'>SHOP NOW</span>
+        <div className='m-7 md:h-full md:w-5/12 md:m-3 lg:m-4 md:p-12 lg:p-12 xl:p-20 xxl:p-24'>
+            <h1 className='md:py-1 py-6 md:mb-2 lg:mb-5 xl:mb-7 xxl:mb-10 text-4xl md:text-2xl lg:text-3xl xl:text-4xl xxl:text-5xl xxl:p-4 font-bold'>{images[current].title}</h1>
+            <p className='font-medium text-gray-400 text-lg md:text-xs lg:text-xs xl:text-sm xxl:text-lg'>{images[current].text}</p>
+            <div className='xxl:h-4 cursor-pointer md:my-2 xxl:my-5 md:py-2 lg:py-2 xxl:py-6 flex items-center my-4 py-6 hover:text-gray-400 transition-all ease-in duration-300 gap-3'>
+                <span className='tracking-[1em] font-bold md:text-xs lg:text-xs xl:text-base xxl:text-xl text-medium'>SHOP NOW</span>
                 <svg className='' width="40" height="12" xmlns="http://www.w3.org/2000/svg"><path d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z" fill="#000" fill-rule="nonzero"/></svg>
             </div>
         </div>
