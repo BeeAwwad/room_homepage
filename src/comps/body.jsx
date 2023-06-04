@@ -4,7 +4,7 @@ import About from './about'
 
 const Body = () => {
   return (
-    <div id='body'>
+    <div className='grid grid-rows-2 absolute top-0 left-0' id='body'>
         <Couresel/>
         <About/>
     </div>
