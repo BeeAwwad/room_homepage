@@ -43,8 +43,8 @@ const Couresel = () => {
       const imageSource = isMobile ? images[current].mobsrc : images[current].src;
 
   return (
-    <div className='absolute top-0 left-0 md:flex md:h-96 lg:h-fit  xl:h-3/5'>
-        <div id="carousel" className="w-full relative md:h-full md:w-7/12">
+    <div  id="carousel" className='absolute top-0 left-0 md:flex md:h-96 lg:h-fit  xl:h-3/5'>
+        <div className="w-full relative md:h-full md:w-7/12">
             <img className='w-full md:h-full md:w-full object-cover' src={imageSource} alt={images[current].alt} title={images[current].title} key={images[current].id} />
             <div className="flex justify-end absolute bottom-0 right-0 md:transform md:translate-x-full">
                 <button onClick={prevSlide} className="bg-gray-900 hover:bg-gray-700 text-gray-800 font-bold xl:py-5 py-3 xl:px-8 px-6 transition-all ease-out duration-500">
