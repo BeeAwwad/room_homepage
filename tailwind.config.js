@@ -13,7 +13,10 @@ export default {
     extend: {
       fontFamily: {
         sparta: ['League Spartan']
-      }
+      },
+      gridTemplateRows: {
+        'auto': 'auto',
+      },
     },
   },
   plugins: [],

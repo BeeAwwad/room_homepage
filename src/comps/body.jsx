@@ -4,7 +4,7 @@ import About from './about'
 
 const Body = ({ isBackgroundGray }) => {
   return (
-  <div className={`grid grid-rows-2 font-sparta ${isBackgroundGray ? 'brightness-50 bg-gray-100' : ''}`} id='body'>
+  <div className={`md:grid md:grid-rows-auto font-sparta ${isBackgroundGray ? 'brightness-50 bg-gray-100' : ''}`} id='body'>
         <Couresel/>
         <About/>
     </div>

@@ -43,7 +43,7 @@ const Couresel = () => {
       const imageSource = isMobile ? images[current].mobsrc : images[current].src;
 
   return (
-    <div className='row-span-1 md:fit md:h:[53%]'>
+    <div className='row-span-1 md:h:[53%]'>
         <div  id="carousel" className='md:flex md:h-full lg:h-full'>
             <div className="w-full relative md:h-full md:w-7/12">
                 <img className='w-full md:h-full md:w-full object-cover' src={imageSource} alt={images[current].alt} title={images[current].title} key={images[current].id} />
