@@ -35,7 +35,7 @@ const Header = ({ toggleBackground }) => {
             {open ? close : burger}
           </div>
 
-          <ul className={`text-lg font-semibold text-black md:text-white items-center md:items-start bg-white w-full h-28 md:h-0 absolute p-5 md:p-0 top-0 right-0 md:static flex justify-end md:justify-normal gap-4 transition-all md:mt-2 md:text-sm lg:text-base xl:text-lg duration-400 z-40 ease-in ${open ? '-top-7': 'top-[-300px]'}`}>
+          <ul className={`text-lg font-semibold text-black md:text-white items-center md:items-start bg-white w-full h-28 md:h-0 absolute p-5 md:p-0 top-0 right-0 md:static flex justify-end md:justify-normal gap-4 transition-all md:mt-2 md:text-sm lg:text-base xl:text-lg duration-400 z-40 ease-in ${open ? '-top-6': 'top-[-300px]'}`}>
             {
               Links.map((link)=>(
                 <li className='cursor-pointer relative group'>
